@@ -2,7 +2,7 @@
 // Generated on Fri Mar 30 2018 15:58:18 GMT+0530 (IST)
 
 // Importing Webpack configuration
-var webpackConfig = require('./webpack.config');
+const webpackConfig = require('./webpack.config');
 
 module.exports = function(config) {
   config.set({
@@ -63,7 +63,7 @@ module.exports = function(config) {
 
     // start these browsers
     // available browser launchers: https://npmjs.org/browse/keyword/karma-launcher
-    browsers: ['Chrome', 'Firefox', 'Safari', 'Opera', 'ChromeCanary'],
+    browsers: ['Chrome'],
 
 
     // Continuous Integration mode
