@@ -14,7 +14,7 @@ describe('Testing Calculator Class', () => {
   });
 
   // Testing sum method
-  it(`Addition of ${num1} & ${num2} should result 20`, () => {
+    it(`Addition of ${num1} & ${num2} should result 20`, () => {
     expect(Calc.sum).toBe(20);
   });
 
@@ -28,6 +28,7 @@ describe('Testing Calculator Class', () => {
     expect(Calc.multiply).toBe(100);
   });
 
+  // Testing divided method
   it(`${num1} divided by ${num2} should be 1`, () => {
     expect(Calc.divided).toBe(1);
   });
