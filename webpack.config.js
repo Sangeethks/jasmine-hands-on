@@ -1,3 +1,5 @@
+const webpack = require('webpack');
+const fs = require('fs');
 const path = require('path');
 
 module.exports = {
@@ -19,5 +21,12 @@ module.exports = {
         }
       } // .js
     ] // rules
-  } // module
+  }, // module
+  plugins: [
+    new webpack.DefinePlugin({
+      'process.env': {
+        'NODE_ENV': 'development'
+      }
+    })
+  ]
 }
