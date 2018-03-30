@@ -1,6 +1,9 @@
 // Karma configuration
 // Generated on Fri Mar 30 2018 15:58:18 GMT+0530 (IST)
 
+// Importing Webpack configuration
+var webpackConfig = require('./webpack.config');
+
 module.exports = function(config) {
   config.set({
 
@@ -24,10 +27,14 @@ module.exports = function(config) {
     exclude: [
     ],
 
+    // Setting Webpack to Karma Configuration
+    webpack: webpackConfig,
 
     // preprocess matching files before serving them to the browser
     // available preprocessors: https://npmjs.org/browse/keyword/karma-preprocessor
     preprocessors: {
+      'src/*.js': ['webpack'],
+      'test/*.test.js': ['webpack']
     },
 
 
